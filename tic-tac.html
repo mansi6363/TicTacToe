@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="tic-tac.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TIC TAC TOE</title>
+
+</head>
+
+<body>
+	<h1>TIC-TAC-TOE</h1>
+
+
+	<div class="stripe">
+		<button id="reset">Reset</button>
+		<span id="message"></span>
+		<button id="p1btn" class="selected">Player-1(X)</button>
+		<button id="p2btn">Player-2(O)</button>
+	</div>
+
+	<table>
+		<tr>
+			<td class="square display" onclick="getClickHandler(0)()"></td>
+			<td class="vertical square display" onclick="getClickHandler(1)()"></td>
+			<td class="square display" onclick="getClickHandler(2)()"></td>
+		</tr>
+		<tr>
+			<td class="horizontal square display" onclick="getClickHandler(3)()"></td>
+			<td class="vertical horizontal square display" onclick="getClickHandler(4)()"></td>
+			<td class="horizontal square display" onclick="getClickHandler(5)()"></td>
+		</tr>
+		<tr>
+			<td class="square display" onclick="getClickHandler(6)()"></td>
+			<td class="vertical square display" onclick="getClickHandler(7)()"></td>
+			<td class="square display" onclick="getClickHandler(8)()"></td>
+		</tr>
+	</table>
+	<script src="config.js"></script>
+	<script src="tic-tac.js"></script>
+</body>
+
+</html>
